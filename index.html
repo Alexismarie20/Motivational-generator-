@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>AI Generator</title>
 </head>
@@ -12,20 +13,18 @@
     <h1>Here to help you generator some motivation!</h1>
   </header>
   <main>
-    <form>
+    <form id="poem-generator-form">
       <input type="text" id="input" placeholder="Enter a topic for motivation" 
       autofocus 
       required
       autocomplete="off"
-      >
-      <button type="submit" id="submit">Generate</button>
+      class="instructions"
+      />
+        <input type="submit" class="submit-button" />
     </form>
-  <div class="poem">
-    poem goes here
-    <br>
-  poem
-  </div>
+  <div class="poem" id="poem"></div>
   </main>
+  
   <footer>
     This AI generator was coded by <a href="https://github.com/Alexismarie20">Alexis Hepler</a> 
     is open-sourced on <a href="https://github.com/Alexismarie20/Motivational-generator-">Github</a> 

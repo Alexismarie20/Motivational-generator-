@@ -45,7 +45,7 @@ form {
   color:navy;
 }
 
-#submit {
+.submit-button {
   margin-left: 10px;
   background-color: rgb(21, 186, 196);
   color: white;
