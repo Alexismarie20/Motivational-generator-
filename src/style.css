@@ -35,7 +35,7 @@ form {
   margin-bottom: 30px;
 }
 
-#input {
+.input {
   padding: 16px;
   border: 1px soild rgba(39, 33, 66, 0.5);
   width: 80%;
