@@ -21,22 +21,23 @@ header {
 h1 {
   text-align: center;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 40px;
+  font-family: italic;
   line-height: 1.5;
   color: navy;
 }
 
 .form-container {
   background-color: transparent;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
   padding: 15px 20px;
 }
 
 form {
   display: flex; 
-  flex-direction: column; /* Ensures elements stack properly */
+ 
 ;
 }
 
@@ -45,6 +46,7 @@ form {
   margin-top: 5px;
   opacity: 0.6;
   font-size: 12px;
+  
 }
 
 
