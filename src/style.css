@@ -26,24 +26,40 @@ h1 {
   color: navy;
 }
 
-form {
-  padding: 30px;
+.form-container {
   background-color: transparent;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  display: flex;
   margin-bottom: 30px;
+  padding: 15px 20px;
 }
+
+form {
+  display: flex; 
+  flex-direction: column; /* Ensures elements stack properly */
+;
+}
+
+.hint {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
+}
+
+
+
 
 .input {
   padding: 16px;
-  border: 1px soild rgba(39, 33, 66, 0.5);
+  border: 1px solid rgba(39, 33, 66, 0.5);
   width: 80%;
   font-size: 16px;
   border-radius: 50px;
   line-height: 20px;
   color:navy;
 }
+
 
 .submit-button {
   margin-left: 10px;
@@ -66,8 +82,27 @@ form {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.hidden {
+  display: none;
+}
+
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
